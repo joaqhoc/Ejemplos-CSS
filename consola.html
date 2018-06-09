@@ -19,6 +19,31 @@
 			background-color: #c9c9c9;
 			height: 100vh;
 		}
+		
+		.titulo{
+			font-size: 72px;
+			background: -webkit-linear-gradient(#C1C6C1, #333);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-family: monospace;
+			text-align: center;
+			animation: 1.5s blink2 infinite;
+		}
+
+		@keyframes blink2{
+			0%{
+				opacity: 1;
+			}
+			50%{
+				opacity: 1;
+			}
+			51%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 0;
+			}
+		}
 
 		.contenedor-web{
 			display: -webkit-box;
@@ -132,7 +157,7 @@
 	</style>
 </head>
 <body>
-
+<div class="titulo">Unc3ns0r3d CSS</div>
 	<div class="contenedor-web">
 		<div class="consola">
 			<div class="consola-cabecera">
