@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Animar texto con CSS3</title>
+<style type="text/css">
+<!--
+ @-webkit-keyframes pulse { 
+   from { 
+   opacity: 0.0; /* Nivel de transparencia inicial */ 
+   font-size: 50px; /* Tamaño inicial de la font en la animación */ 
+   } 
+   to { 
+   opacity: 0.8; /* Nivel de Transparencia final */ 
+   font-size: 100px; /* Tamaño final de la font en la animación */ 
+   } 
+   }   
+   #animacionpulse { 
+   -webkit-animation-name: pulse; /* El nombre del efecto que estamos agregando */ 
+   -webkit-animation-duration: 2s; /* Tiempo que durará la animación */ 
+   -webkit-animation-iteration-count: infinite; /* Las veces que queremos reproducir la animación */ 
+   -webkit-animation-timing-function: ease-in-out; 
+   -webkit-animation-direction: alternate; /* Propiedad utilizada para que el texto regrese al tamaño de origen de manera gradual */ 
+   } 
+   
+
+
+   @-webkit-keyframes bounce { 
+   from { 
+   left: 0px; 
+   } 
+   to { 
+   left: 200px; 
+   } 
+   }    
+   #animacionbounce { 
+   -webkit-animation-name: bounce; 
+   -webkit-animation-duration: 2s; 
+   -webkit-animation-iteration-count: infinite; 
+   -webkit-animation-direction: alternate; 
+   width: 50%;
+   padding: 0.2em 1em; 
+   position: relative;  /*La posición relative es necesaria */
+   background: crimson; 
+   } 
+   
+   
+    @-webkit-keyframes pulse { 
+   0% { 
+   background-color: black; 
+   opacity: 1.0; 
+   -webkit-transform: scale(1.0) rotate(0deg); 
+   } 
+   20% { 
+   background-color: black; 
+   opacity: 0.8; 
+   -webkit-transform: scale(1.2) rotate(-5deg); 
+   } 
+   40% { 
+   background-color: black; 
+   opacity: 0.6; 
+   -webkit-transform: scale(1.0) rotate(5deg); 
+   } 
+   55% { 
+   background-color: black; 
+   opacity: 0.8; 
+   -webkit-transform: scale(2.0) rotate(0deg); 
+   } 
+   65% { 
+   background-color: black; 
+   opacity: 0.9; 
+   -webkit-transform: scale(2.0) rotate(0deg); 
+   } 
+   100% { 
+   background-color: black; 
+   opacity: 1.0; 
+   -webkit-transform: scale(2.0) rotate(0deg); 
+   } 
+   } 
+   
+   .banner { 
+   -webkit-animation-name: pulse; 
+   -webkit-animation-duration: 2s; 
+   -webkit-animation-iteration-count: infinite; 
+   -webkit-animation-timing-function: ease-in-out; 
+   -webkit-animation-direction: alternate; 
+   color:red;
+   background-color: black;
+   width: 10%; 
+   padding: 0.2em 1em; 
+   margin: 6em; 
+   }
+-->
+</style>
+</head>
+
+<body>
+ <div id="animacionpulse" style="font-family: Arial; text-align: center;"> 
+   Ejemplo de Pulse! 
+ </div> 
+
+ <div id="animacionbounce"> 
+   Prueba de bounce! 
+ </div> 
+
+<div class="banner"> 
+<p> 
+   Ejemplo Banner 
+   <span style="font-size:12px">Ejemplo Banner</span> 
+</p> 
+</div> 
+</body>
+</html>
