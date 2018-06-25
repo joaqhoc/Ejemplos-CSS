@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Página de ejemplo</title>
+		<style type="text/css">
+			html, body { margin:0; padding:0; border:none; }
+			#contenedor {
+			width:80%;
+			margin: auto;
+			}
+			#cabecera, #pie {
+			background: #cbcbcb;
+			}
+			#pie {
+			clear: both;
+			}
+			#primero {
+			background: #fb9f9f;
+			float: left;
+			width: 65%;
+			margin-right: 1%;
+			display: block;
+			height: 190px;
+			}
+			#segundo {
+			background: #fdc08b;
+			float: right;
+			width: 26%;
+			display: block;
+			height: 190px;
+			}
+			#tercero {
+			background: #fdeb8b;
+			clear: both;
+			width: 96%;
+			}
+			#cabecera, #pie, #primero, #segundo, #tercero {
+			padding: 1.25em 2%;
+			margin: 0.4em 0;
+			}
+			#cabecera{ margin-bottom: 0; }
+			#contenido { padding: 0; } 
+		</style>
+	</head>
+<body>
+	<div id="contenedor">
+		<div id="cabecera">
+			<h3>Cabecera</h3>
+		</div>
+		<div id="contenido">
+			<div id="caja">
+				<div id="primero">
+					Contenido principal
+				</div>
+				<div id="segundo">
+					Contenido de segundo orden
+				</div>
+			</div>
+			<div id="tercero">
+				Contenido de tercer orden
+			</div>
+		</div>
+		<div id="pie">
+			Pie de página
+		</div>
+	</div>
+</body>
+</html>
